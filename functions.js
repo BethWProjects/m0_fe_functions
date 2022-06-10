@@ -13,11 +13,11 @@ function dogName(name) {
 dogName("Jimmy");
 
 // 3: Write a function that has 3 parameters: a string and two numbers. The String will be the name of a company, and the numbers will represent the minimum and maximum of a pay range for a posted job. The function should print out a sentence that includes the name of the company and the range itself (if the numbers passed in are 90000 and 110000, the pay range is 20000).
-function company(name) {
-var sum = 110000 - 90000;
-  console.log(`The company: ${name} has an average pay range of: ` + (sum));
+function company(name, maxSalary, minSalary) {
+  var sum = maxSalary - minSalary;
+  console.log(`The company: ${name} has an average pay range of: ${sum}`);
   }
-  company("Turing");
+  company("Turing", 110000, 90000);
 
 // 4: Write a function that satifies the following interaction pattern:
 function checkStock(number, item) {
